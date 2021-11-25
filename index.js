@@ -115,7 +115,23 @@ return sum;
 
 // The function should return the square of that number.
 
+//with math.pow (but I found that a single number argument returns NaN)
+function squareThis(num) {
+  let square = Math.pow(num);
+  return square;
+}
+console.log(squareThis(2));
 
+//OR with ES6 - Exponentiation Method
+
+function squareNumber(num) {
+  return num ** 2;
+}
+console.log(squareNumber(2));
+console.log(squareNumber(12));
+console.log(squareNumber(3));
+console.log(squareNumber(4));
+console.log(squareNumber(5));
 
 // 6. Odd or Even 
 // Write a function which accepts a number as an argument.
